@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'hellovetica';
+    src: url('src/fonts/hellovetica.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url('src/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'fraunces italic';
+    src: url('src/fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('ttf');
+}

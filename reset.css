@@ -1,0 +1,133 @@
+/* CSS Reset */
+
+/* Box-sizing border-box reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+button,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* List style reset */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove anchor text-decoration */
+a {
+    text-decoration: none;
+}
+
+/* Remove outline on active elements */
+a,
+button,
+input,
+textarea,
+select {
+    outline: none;
+}
+
+/* Reset heading sizes */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Remove border on images */
+img {
+    border-style: none;
+}
+
+/* Responsive media */
+img,
+video,
+canvas {
+    max-width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Body styling */
+body {
+    line-height: 1;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Remove default button styles */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    /* Additional styles as needed */
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Add pointer cursor */
+}
