@@ -123,6 +123,8 @@ nav button {
     align-items: flex-start;
     gap: 8px;
     flex: 1;
+
+    width: 100%;
 }
 
 .posts .col.horizontal {
@@ -984,8 +986,24 @@ footer .col ul {
 /* media querries */
 
 @media(max-width: 1104px) {
+    nav {
+        justify-content: space-around;
+    }
+    
     nav ul {
         display: none;
+    }
+
+    .hero {
+        padding: 4rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero span {
+        font-size: 1.5rem;
     }
 
     .mail {
@@ -1036,5 +1054,170 @@ footer .col ul {
     footer .col {
         min-width: 300px;
         margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .hero {
+        padding: 3rem 1rem 5rem 1rem;
+    }
+
+    .posts {
+        padding: 0 1rem;
+    }
+
+    .posts .post {
+        border-radius: 32px;
+    }
+
+    .posts .post .tags {
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .posts .post .header-container {
+        padding: 1.5rem;
+    }
+
+    .posts .post .header-container.pixelated h2 {
+        font-size: 1.2rem;
+        line-height: 160%;
+    }
+
+    .posts .post h2 {
+        font-size: 3rem;
+    }
+
+    #post1 .header-container h2,
+    #post6 .header-container h2 {
+        font-size: 2rem;
+    }
+
+    #post1 .header-container span,
+    #post6 .header-container span {
+        font-size: 1.3rem;
+    }
+
+    #post3 {
+        aspect-ratio: 1/1;
+    }
+
+    #post3 .header h2:first-child {
+        font-size: 2rem;
+        margin-bottom: -1rem;
+    }
+
+    #post3 .header h2:last-child {
+        font-size: 3rem;
+    }
+
+    #post4 .header-container h2 {
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+
+    #pill h2 {
+        font-size: 8rem;
+    }
+
+    #post6 .header-container {
+        padding: 2rem;
+    }
+
+    #feature1 {
+        padding: 3rem;
+    }
+
+    #feature1 {
+        gap: 1rem;
+    }
+
+    #feature1 h2 {
+        font-size: 4rem;
+    }
+
+    #feature1 p {
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    #feature1 p br {
+        display: none;
+    }
+
+    #feature1 span {
+        transform: scale(0.35);
+        transform-origin: bottom right;
+        bottom: 3rem;
+        right: 3rem;
+    }
+
+    #feature2 .header-container {
+        padding: 2rem;
+    }
+
+    #feature2 .header-container h2 {
+        font-size: 2.5rem;
+        line-height: 100%;
+    }
+
+    #feature2 .header-container h2:first-child {
+        font-size: 1.5rem;
+        line-height: 200%;
+        letter-spacing: -0.1rem;
+    }
+
+    #feature3 .text {
+        height: 90%;
+    }
+
+    #feature4 h2 {
+        transform: scale(0.7);
+        transform-origin: center center;
+    }
+
+    .mail {
+        padding: 64px 16px;
+    }
+
+    .letter {
+        gap: 48px;
+    }
+    
+    .letter h2 {
+        width: 100%;
+        transform-origin: left center;
+        height: auto;
+        
+        font-size: 2rem;
+    }
+
+    .letter h2 span {
+        font-size: 1rem;
+    }
+
+    .letter br {
+        display: none;
+    }
+
+    .letter form {
+        padding: 0;
+    }
+
+    .letter form input[type="email"] {
+        font-size: 3rem;
+    }
+    
+    .letter form button {
+        font-size: 0;
+    }
+
+    footer {
+        padding: 32px;
+    }
+
+    footer .cols {
+        flex-direction: column;
     }
 }
